@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Bayan Altaleb's personal portfolio showcasing cybersecurity, networking, web development skills, and projects.">
+
+    <title>Bayan Altaleb | Cybersecurity Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>Bayan Altaleb</h2>
+
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="themeBtn" type="button">
+            Change Theme
+        </button>
+    </header>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <img
+                src="assets/profile.jpg"
+                alt="Profile photo of Bayan Altaleb"
+                width="180"
+                height="180"
+            >
+
+            <h1>Hello, I'm Bayan!</h1>
+
+            <p>
+                I'm a Networks and Cyber Security graduate from
+                Al-Ahliyya Amman University, with a GPA of 3.67/4.
+                I have an interest in cybersecurity, networking,
+                and web development. I enjoy learning new technologies,
+                solving problems, and working on projects that help me
+                develop my technical skills. I'm always eager to explore
+                new challenges, gain practical experience, and grow
+                both personally and professionally.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <div class="grid">
+                <div>HTML, CSS &amp; JavaScript</div>
+                <div>Linux Fundamentals</div>
+                <div>Network Security</div>
+                <div>Git &amp; GitHub</div>
+                <div>Basic Penetration Testing</div>
+                <div>Computer Networking</div>
+                <div>Cybersecurity Fundamentals</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="grid">
+                <div>
+                    <a
+                        href="https://github.com/Bayan111-cyber/project00"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Project 00 - Linux &amp; Git
+                    </a>
+                </div>
+
+                <div>
+                    <a
+                        href="https://github.com/Bayan111-cyber/project01"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Project 01 - HTML
+                    </a>
+                </div>
+
+                <div>
+                    <a
+                        href="https://github.com/Bayan111-cyber/project02"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Project 02 - CSS
+                    </a>
+                </div>
+
+                <div>
+                    <a
+                        href="https://github.com/Bayan111-cyber/project03"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Project 03 - JavaScript
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+
+            <p>
+                CTF Challenges |
+                Coding |
+                Continuous Learning |
+                Cybersecurity Research
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Have a question or want to connect?
+                Send me a message!
+            </p>
+
+            <form id="contactForm" action="https://formspree.io/f/xwlvzpby" method="post" class="content-form">
+                <label for="from_name">Your Name</label>
+                <input
+                    type="text"
+                    id="from_name"
+                    name="from_name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="from_email">Your Email</label>
+                <input
+                    type="email"
+                    id="from_email"
+                    name="from_email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="messageInput">Your Message</label>
+                <textarea
+                    id="messageInput"
+                    name="message"
+                    placeholder="Write your message here..."
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit" id="sendBtn">
+                    Send Message
+                </button>
+            </form>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Bayan Altaleb |
+            My Personal Portfolio
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

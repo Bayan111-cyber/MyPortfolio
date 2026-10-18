@@ -1,0 +1,141 @@
+* {/*طبّق هذه القواعد على جميع العناصر */
+    margin: 0;/* إزالة الهوامش الافتراضية */
+    padding: 0;/* إزالة الحشوة الافتراضية */
+    box-sizing: border-box;/* تغيير طريقة حساب حجم العناصر لتشمل الحشوة والحدود */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.6;/*تحدد ارتفاع السطر والمسافة الرأسية بين الأسطر، وتجعل النص أسهل في القراءة.*/
+}
+
+header {
+    position: sticky;/* يجعل الرأس ثابتًا في أعلى الصفحة عند التمرير */
+    top: 0;/* يحدد المسافة من أعلى الصفحة */
+    z-index: 1000;/* يحدد ترتيب العنصر بالنسبة للعناصر الأخرى */
+    background: #263238;
+    color: white;
+    padding: 20px;
+    display: flex;/* يجعل العناصر داخل الحاوية تصطف بجانب بعضها افتراضيًا.*/
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;/* سمح للعناصر بالانتقال إلى سطر جديد إذا لم تتسع في السطر */
+    gap: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: #00897b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;/* تجعل الصورة تملأ المساحة بالكامل مع الحفاظ على تناسب أبعادها، وقد تقص جزءًا منها إذا لزم الأمر.*/
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.grid div {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1 1 200px;/* يسمح للعناصر بالتمدد والتقلص حسب الحاجة، مع تحديد الحد الأدنى للعرض بـ 200px */
+    max-width: 300px;/* يحدد الحد الأقصى للعرض بـ 300px */
+    box-shadow: 0 2px 6px #ccc;/* يضيف ظلًا خفيفًا حول العنصر لإعطائه تأثيرًا ثلاثي الأبعاد */
+}
+
+form {
+    display: flex;/* يجعل العناصر داخل النموذج تصطف بجانب بعضها افتراضيًا */
+    flex-direction: column;/* يجعل العناصر تصطف عموديًا */
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;/* يورث الخط من العنصر الأب */
+}
+
+textarea {
+    min-height: 100px;
+}
+
+footer {
+    background: #263238;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Dark theme */
+body.dark {
+    background: #181818;
+    color: white;
+}
+
+body.dark .grid div {
+    background: #303030;
+    color: white;
+}
+
+body.dark input,
+body.dark textarea {
+    background: #303030;
+    color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {     
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center; 
+    }
+
+    section {
+        padding: 30px 15px;   
+    }
+
+    .grid div {
+        flex-basis: 100%;
+    }
+}
